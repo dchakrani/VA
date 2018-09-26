@@ -59,9 +59,10 @@
      "from": {"data": "states"},
      "encode": {
        "enter": { "tooltip": {"signal": "format(datum.Amount, '0')"}},
-       "update": { "fill": {"scale": "color", "field": "Amount"}, 
-       "tooltip": {"signal": "{\"Amount\": ''+datum[\"Amount\"]}"}},
-       "hover": { "fill": {"value": "red"} }
+       "update": { "fill": {"scale": "color", "field": "Amount"},
+       "tooltip": {"signal": "'State : ' + datum.State_Abv + '  Amount: ' + datum.Amount"}
+       },
+       "hover": { "fill": {"value": "red"}}
      },
      "transform": [
        { "type": "geoshape", "projection": "projection" }
