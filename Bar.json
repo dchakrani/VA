@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+  "description": "A bar chart showing agricultural losses 2015.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/dchakrani/VA/master/losses2015_transformed.csv"
+  },
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "field": "Damage_Descp",
+      "type": "ordinal",
+      "scale": {"rangeStep": 17},
+      "axis": {"title": "Damage Description"},
+      "sort": {"op": "sum", "field": "Amount"}
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "Amount",
+      "type": "quantitative",
+      "axis": {"title": "Amount"}
+    }
+  }
+}
