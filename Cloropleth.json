@@ -8,7 +8,13 @@
    {
      "name": "Losses",
      "url": "https://raw.githubusercontent.com/dchakrani/VA/master/losses2015_transformed.csv",
-     "format": {"type": "csv", "parse": "auto"}
+     "format": {"type": "csv", "parse": "auto"},
+     "transform": [
+       {"type": "aggregate", 
+       "groupby": ["State_Code","State_Abv"], 
+       "ops": ["sum"], 
+       "fields": ["Amount"], 
+       "as": ["Amount"] }]
    },
    {
      "name": "states",
@@ -33,7 +39,7 @@
    {
      "name": "color",
      "type": "quantize",
-     "domain": [0, 294540],
+     "domain": [0, 494540000],
      "range": {"scheme": "blues", "count": 15}
    }
  ],
