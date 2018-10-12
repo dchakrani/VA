@@ -226,16 +226,16 @@
           .enter().append("path")
           .attr("d", path).attr("fill",function(d){
           if (name_id_map[parseInt(d.id)] > 10000000)
-              return "Navy"
+              return "Teal"
           else if (name_id_map[parseInt(d.id)] > 1000000)
-               return "M"
+               return "LightSeaGreen"
           else if (name_id_map[parseInt(d.id)] > 100000)
-                return "DodgerBlue"
+                return "MediumTurquoise"
           else if (name_id_map[parseInt(d.id)] > 10000)
-                return "steelblue"
+                return "Aquamarine"
           else if (name_id_map[parseInt(d.id)] > 1000)
-                return "Gray"
-          else return "LightGray"
+                return "Cyan"
+          else return "LightBlue"
            }
           )
           .on("mouseover", function(d) {
