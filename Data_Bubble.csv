@@ -1,10 +1,10 @@
-Product_Reporting,Count
-Auto,896
-Business Loans,285
-CreditAnalyzer,11
-Debt Relief,31
-Home Equity,2722
-Personal,6831
-Purchase,1337
-Refinance,37176
-Reverse Mortgage,687
+Product_Reporting,1_Jan,2_Jan,3_Jan,4_Jan
+Auto,161,264,321,677
+Business Loans,63,98,63,65
+CreditAnalyzer,0,3,0,7
+Debt Relief,12,9,345,3
+Home Equity,577,816,75,456
+Personal,1053,1871,876,1654
+Purchase,266,381,345,234
+Refinance,5965,12235,3457,4321
+Reverse Mortgage,136,204,234,231
